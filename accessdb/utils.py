@@ -212,7 +212,7 @@ def _push_access_db(temp_dir, text_file, data_columns,
                   table_name,
                   data_columns,
                   header_columns,
-                  dtype, sep, append, charset)
+                  dtype, sep, append)
     schema_file = os.path.join(temp_dir, SCHEMA_FILE)
     try:
         with SchemaWriter(temp_dir, text_file, data_columns,
